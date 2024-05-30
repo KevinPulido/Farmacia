@@ -7,6 +7,15 @@ public class employees {
     private String username;
     private String address;
     private String telephone;
+    private String email;
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
+    }
     private String password;
     private String rol;
     private String created;
@@ -25,6 +34,10 @@ public class employees {
         this.rol = rol;
         this.created = created;
         this.updated = updated;
+    }
+
+    public employees(String email) {
+        this.email = email;
     }
 
     public int getId() {
