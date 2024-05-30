@@ -136,7 +136,7 @@ public class employeesDao {
     
     //Modificar empleado
     public boolean updateEmployeeQuery(employees employee) {
-        String query="UPDATE employees SET full_name=?,username=?,address=?,telephone=?,email=?,rol=?,update=?"
+        String query="UPDATE employees SET full_name=?,username=?,address=?,telephone=?,email=?,rol=?,updated=?"
                 +"WHERE id=?";
         Timestamp datetime=new Timestamp(new Date().getTime());
         
