@@ -110,6 +110,7 @@ public class SuppliersDao {
         try {
             conn = cn.getConnection();
             pst = conn.prepareStatement(query);
+            pst.execute();
             return true;
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "Error al eliminar el proveedor con id = " + id + "tiene relación en otra tabla");
